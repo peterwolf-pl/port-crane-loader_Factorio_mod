@@ -1,0 +1,11 @@
+{
+  "name": "port-crane-loader",
+  "version": "0.1.18",
+  "factorio_version": "2.0",
+  "title": "Port Crane bulk loader and unloader",
+  "author": "peterwolf.pl",
+  "description": "Offshore port crane for Cargo Ships. Hover the crane and press R to toggle mode: loading or unloading. Must be placed offshore, with waterway 1 or 2 tiles from shore.",
+  "dependencies": [
+    "cargo-ships >= 1.0.0"
+  ]
+}

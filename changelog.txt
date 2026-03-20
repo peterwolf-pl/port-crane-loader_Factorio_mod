@@ -1,0 +1,37 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.18
+Date: 2026-03-15
+  Changes:
+    - Added a startup setting for port crane loading and unloading speed.
+    - Increased the default crane transfer speed multiplier to 10x.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.17
+Date: 2026-03-07
+  Fixes:
+    - Restored true bulk-inserter behavior by clearing the legacy runtime stack size override.
+    - Existing cranes now reset their inserter override on load instead of behaving like stack inserters.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.16
+Date: 2026-03-07
+  Fixes:
+    - Unload fix 
+---------------------------------------------------------------------------------------------------
+Version: 0.1.15
+Date: 2026-03-01
+  Fixes:
+    - Placement now allows offshore cranes with waterway 1 or 2 tiles from shore.
+    - Removed the strict 3x3 straight-waterway placement requirement.
+    - Restored crane overlay rendering above ships with a separate visual entity.
+    - Existing cranes now refresh their overlay automatically after load or configuration changes.
+    - Corrected the crane overlay direction mapping so N/S and E/W match the placed orientation.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.14
+Date: 2026-03-01
+  Fixes:
+    - Factorio 2.0 compatibility: fall back to bulk-inserter when stack-inserter is unavailable.
+    - Recipe now uses bulk-inserter in Factorio 2.0 instead of the removed stack-inserter item.
+    - Crane graphics render directly through platform_picture instead of relying on runtime overlay entities.
+    - Corrected the 4-direction sprite sheet mapping so the crane art matches the placed direction.
