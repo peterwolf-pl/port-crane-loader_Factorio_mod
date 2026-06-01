@@ -19,7 +19,6 @@ local function is_crane(ent)
 end
 
 
-local needs_visual_refresh = true
 local LAND_SIDE_DISTANCE = 2.0
 local WATER_SIDE_DISTANCE = 3.5
 
@@ -427,23 +426,6 @@ local function refresh_all_crane_visuals()
     end
   end
 end
-
-local function refresh_cranes_after_load()
-  if (not needs_visual_refresh) or (not game) then return end
-
-  ensure_globals()
-  apply_to_all_cranes()
-  refresh_all_crane_visuals()
-  needs_visual_refresh = false
-  script.on_nth_tick(1, nil)
-end
-
-script.on_nth_tick(1, refresh_cranes_after_load)
-
-
-
-
-
 
 script.on_init(function()
   ensure_globals()
